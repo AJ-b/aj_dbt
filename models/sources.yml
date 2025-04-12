@@ -1,0 +1,14 @@
+version: 2
+
+sources: 
+    - name: jaffle_shop
+      description: replica of postgres database used by our app
+      database: raw
+      schema: jaffle_shop
+      tables:
+          - name: customers
+            description: one record per customer
+          - name: orders
+            description: one record per order. includes cancelled / deleted orders.
+
+            
